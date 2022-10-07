@@ -1,6 +1,6 @@
 const API_KEY=`8695fdeb586f983fdb44d0f6557fb08c`;
 
-
+const content=document.querySelector(`.content`)
 
 const cityName=document.querySelector(`input`);
 
@@ -18,7 +18,10 @@ const getCity = (cityValue) => {
       .then((data) => displayUptade(data));
   };
 const displayUptade=(data)=>{
-document.querySelector(`.content`).innerHTML+=`
+
+
+
+document.querySelector(`.content`).innerHTML=`
 <div class="contents" style="background-color: rgb(246, 223, 77);width:20%;height:20rem;padding-top:4rem;border-radius:6%;font-weight:900;font-size:3rem;"><div class="city">${data.name},${
    data.sys.country
  }</div>
@@ -27,7 +30,5 @@ document.querySelector(`.content`).innerHTML+=`
          data.weather[0].icon
        }.png" />
        <div class="desc">${data.weather[0].description}</div>
-       <div class="minmax">${Math.round(data.main.temp_min)}°C/${Math.round(
-   data.main.temp_max
- )}°C</div></div>`;
-}
+       </div>`;}
+
