@@ -19,7 +19,7 @@ const getCity = (cityValue) => {
   };
 const displayUptade=(data)=>{
 document.querySelector(`.content`).innerHTML+=`
-<div class="contents" style="background-color: rgb(246, 223, 77);width:20%;height:20rem;padding-top:4rem;border-radius:6%"><div class="city">${data.name},${
+<div class="contents" style="background-color: rgb(246, 223, 77);width:20%;height:20rem;padding-top:4rem;border-radius:6%;font-weight:900;font-size:3rem;"><div class="city">${data.name},${
    data.sys.country
  }</div>
        <div class="temp">${Math.round(data.main.temp)}°C</div>

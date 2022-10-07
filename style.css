@@ -10,6 +10,7 @@ body{
     background-image: url(./img/nature-horizon-light-cloud-sky-sunlight-atmosphere-summer-daytime-fluffy-weather-cumulus-blue-cloudscape-blue-sky-outdoors-clouds-grassland-climate-day-clouds-sky-sky-clouds-blue-sky-clouds-meteorology-met.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+     min-height: 50rem;
 }
 h1{
     text-align: center;
